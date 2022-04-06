@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <link rel="stylesheet" href="css/styles.css" /> 
-             
+
         <title>NuCamp: A Better Way To Camp</title>
     </head>
 
@@ -30,7 +30,7 @@
                     <h2>A better way to camp</h2>
                 </div>
                 <div class="col col-xs col-md-4 col-xl-2 align-self-center mt-4">
-                    <p><a class="btn btn-info btn-lg text-nowrap" href="#Submit" role="button">Reserve Campsite</a></p>
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -168,6 +168,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 </body>
 
